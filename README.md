@@ -22,4 +22,6 @@ Queries for SaaS enviroments with Direct Data Access (DDA).
 The Blackboard Database Query Repository is an organic project to help share resources among Blackboard Administrators. 
 As resources are found, they will be listed here. 
 
-Contact Carolyn Ponce at cponce@astate.edu to share a new resource or report a broken link. 
+To share a new resource or report a broken link:
+
+Please place new Queries in the correct folder. Include a basic summary
