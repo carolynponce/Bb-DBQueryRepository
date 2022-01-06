@@ -27,7 +27,9 @@ As resources are found, they will be listed here.
 Query Formats:
       
     1. Add new queries to the folder for the specific deployment. 
-    2. Include a short summary of what the query pulls and how it is presented. (i.e. --Searches for certain Course Roles. Displays Course Role, Username and Course ID.)
+    2. Include a short summary of what the query pulls and how it is presented. 
+       (i.e. --Searches for certain Course Roles. Displays Course Role, Username and Course ID.)
     3. Indicate if the query is specific to any service pack or version.
     4. Include your name or reference the develper on your query (optional).
-    5. Do not include any personal institution informaiton, such as Usernames or ID's. Use placeholders when needed.
+    5. Do not include any personal institution informaiton, such as Usernames or ID's. 
+       Use placeholders when needed (i.e. [insert role_id] )
