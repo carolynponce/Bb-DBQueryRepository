@@ -1,2 +1,2 @@
 # Bb-DBQueryRepository
-Repositor of queries for Blackboard database administrators.
+Repository of queries for Blackboard database administrators.
