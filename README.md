@@ -10,8 +10,12 @@ Queries for self-hosted environments.
 ## Managed-Hosted 
 Queries for managed-hosted enviroments with Open DB access. 
 
+[Access the Repository](https://github.com/carolynponce/Bb-DBQueryRepository/tree/main/MH)
+
 ## SaaS
 Queries for SaaS enviroments with Direct Data Access (DDA).
+
+[Access the Repository](https://github.com/carolynponce/Bb-DBQueryRepository/tree/main/SaaS)
 
 ## Notice
 
