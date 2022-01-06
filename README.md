@@ -6,6 +6,7 @@ The Respository is currently being built. Some of the links below may not work a
 Queries for self-hosted environments.
 
 [Access the Repository](SH)
+[Access the Repository](https://github.com/carolynponce/Bb-DBQueryRepository/tree/main/SH)
 
 ## Managed-Hosted 
 Queries for managed-hosted enviroments with Open DB access. 
