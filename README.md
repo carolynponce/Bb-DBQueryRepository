@@ -1,21 +1,21 @@
 # Welcome to the Blackboard Database Query Repository
 
-The Respository is currently being built. Some of the links below may not work at this time. Thank you for your patience. 
+The Respository is currently being built. Thank you for your patience. 
 
-## Self-Hosted
-Queries for self-hosted environments.
+## Self Hosted
+Queries for Self Hosted (SH) environments.
 
-[Access the Repository](https://github.com/carolynponce/Bb-DBQueryRepository/tree/main/SH)
+[Access the SH Repository](https://github.com/carolynponce/Bb-DBQueryRepository/tree/main/SH)
 
-## Managed-Hosted 
-Queries for managed-hosted enviroments with Open DB access. 
+## Managed Hosted 
+Queries for Managed Hosted (MH) enviroments with Open DB access. 
 
-[Access the Repository](https://github.com/carolynponce/Bb-DBQueryRepository/tree/main/MH)
+[Access the MH Repository](https://github.com/carolynponce/Bb-DBQueryRepository/tree/main/MH)
 
 ## SaaS
 Queries for SaaS enviroments with Direct Data Access (DDA).
 
-[Access the Repository](https://github.com/carolynponce/Bb-DBQueryRepository/tree/main/SaaS)
+[Access the SaaS Repository](https://github.com/carolynponce/Bb-DBQueryRepository/tree/main/SaaS)
 
 ## Notice
 
