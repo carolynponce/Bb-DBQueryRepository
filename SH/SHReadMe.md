@@ -1,5 +1,6 @@
 Repository of database queries for Self Hosted deployments. 
 
 
-<h3> Notice </h3>
+## Notice
+
 The Blackboard Database Query Repository is an organic project to help share resources among Blackboard Administrators.
