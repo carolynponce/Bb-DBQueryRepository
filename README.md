@@ -17,6 +17,11 @@ Queries for SaaS enviroments with Direct Data Access (DDA).
 
 [Access the SaaS Repository](https://github.com/carolynponce/Bb-DBQueryRepository/tree/main/SaaS)
 
+## Blackboard Data
+Repository of queries for Blackbaord Data, hosted by Blackboard. 
+
+[Access the Blackboard Data Query Repository](https://github.com/blackboard/BBDN-BlackboardData-Queries)
+
 ## Notice
 
 The Blackboard Database Query Repository is an organic project to help share resources among Blackboard Administrators. 
