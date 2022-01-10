@@ -1,12 +1,8 @@
-/*----------
-  jeff.kelley@blackboard.com  27 Feb 2021
-  no warranty or support
-  use with the _cms_doc database
-  lists the paths and files of the largest 1000 files on the system.
-  Excluding manual and automatic archives
-  To run - highlight query and click play
-  -----
-*/
+-- File Sizes
+-- from Jeff Kelley, Blackboard, no warranty or support
+-- SaaS Version
+-- Use with the _cms_doc database
+-- Description: Allows the user to list the paths and files of the largest 1000 files on the system, excludes manual and automatic archives
 
 SELECT
   fver.blob_id,          -- blob ID is the key value of the unique file on the file system
@@ -24,7 +20,7 @@ FROM xyf_urls furl
 WHERE ffile.file_type_code = 'F'                            --F for Files and not D for directory
  AND furl.full_path NOT LIKE '/internal/autoArchive/%'     -- no automatic archives (in *_cms_doc)
  AND SPLIT_PART(furl.full_path,'/',5) != 'archive%'         -- no manual archives (in *_cms_doc)
- and furl.full_path like '%courseID%'
+ and furl.full_path like '%[insert Course_ID]%'
 
 ORDER BY ffile.file_size DESC
 
