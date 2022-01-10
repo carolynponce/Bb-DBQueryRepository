@@ -1,4 +1,8 @@
 -- Chris Baca, SAGU
+-- Course Enrollment by Username
+-- from Chris Baca, SAGU
+-- SaaS Version
+-- Description: Allows the user to search Course Enrollment by Username
 
 select
 cu.pk1
@@ -12,7 +16,7 @@ from course_users cu
 	inner join term t on t.pk1 = ct.term_pk1
 where cu.role = 'S'
 	and cu.row_status = '0'
-	and u.user_id like 'InsertUsername'
+	and u.user_id like '[Insert Username]'
 	and cm.pk1 not in (
 						select
 							crsmain_pk1
