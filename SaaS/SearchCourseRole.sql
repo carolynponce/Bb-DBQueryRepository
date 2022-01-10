@@ -1,8 +1,8 @@
--- Searches for certain Course Roles.
--- from Chris Bray, University of Arkansas
--- SaaS Version
--- Description: Allows the user to search for certain Course Roles based on the role_id listed on the Course/Organization Roles page in Blackboard. 
--- Displays Course Batch UID, Course ID, and User ID and DSK. 
+-- Title: Searches for certain Course Roles
+-- Author: Chris Bray, University of Arkansas
+-- Version: SaaS
+-- Description: Allows the user to search for certain Course Roles based on the role_id listed on the Course/Organization Roles page in Blackboard.
+-- Display/Output: Course Batch UID, Course ID, and User ID and DSK. 
 
 select cm.batch_uid, cm.course_id, u.user_id as Email, cu.role, ds.batch_uid as DSK
 from course_users cu
