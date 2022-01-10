@@ -1,0 +1,12 @@
+Copy and paste the following header into your query submission.
+Note: SH queries are written for Oracle or Microsoft SQL server [MSSQL].
+
+-- Title:
+-- Author: (insert developer name)
+-- Version: Self Hosted
+-- Specific Blackboard Database: [i.e. admin, cms_doc] (optional)
+-- Description: 
+-- Display/Output: (optional)
+-- Depricated/Information Only: (optional)
+
+(Insert query here)
