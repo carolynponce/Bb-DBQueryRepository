@@ -1,9 +1,10 @@
 Copy and paste the following header into your query submission.
+Note: SaaS queries are written for PostgreSQL.
 
 -- Title:
 -- Author: (insert developer name)
 -- Version: SaaS
--- Database: (optional)
+-- Specific Blackboard Database: [i.e. admin, cms_doc] (optional)
 -- Description: 
 -- Display/Output: (optional)
 -- Depricated/Information Only: (optional)
