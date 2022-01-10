@@ -1,7 +1,12 @@
+Copy and paste the following header into your query submission.
+Note: MH queries are written for Oracle.
+
 -- Title:
 -- Author: (insert developer name)
--- Version: MH
--- Database: (optional)
+-- Version: Managed Hosted
+-- Specific Blackboard Database: [i.e. admin, cms_doc] (optional)
 -- Description: 
 -- Display/Output: (optional)
+-- Depricated/Information Only: (optional)
 
+(Insert query here)
