@@ -1,8 +1,9 @@
--- Running Course Copy Tasks
--- from Chris Bray, University of Arkansas
--- SaaS Version
--- Description: Allows the user to see all queued tasks in the Blackboard system which ave any status other than completed (STATUS NOT LIKE C).
+-- Title: Running Course Copy Tasks
+-- Author: Chris Bray, University of Arkansas
+-- Version: SaaS
+-- Description: Allows the user to see all queued tasks in the Blackboard system which ave any status other than completed (STATUS NOT LIKE C). 
 -- The query calls specific attention to the Completed, Running, and Waiting statuses.
+
 
 SELECT QT.PK1, QT.DTCREATED, QT.DTMODIFIED, QT.TITLE, QT.TASK_TYPE,
     CASE
