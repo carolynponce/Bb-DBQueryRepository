@@ -1,7 +1,7 @@
--- File Sizes
--- from Jeff Kelley, Blackboard, no warranty or support
--- SaaS Version
--- Use with the _cms_doc database
+-- Title: File Sizes
+-- Author: Jeff Kelley, Blackboard, no warranty or support
+-- Version: SaaS
+-- Specific Blackboard Database: Use with the _cms_doc database
 -- Description: Allows the user to list the paths and files of the largest 1000 files on the system, excludes manual and automatic archives
 
 SELECT
