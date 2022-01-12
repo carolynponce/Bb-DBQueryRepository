@@ -2,25 +2,7 @@
 
 The Respository is currently being built. Thank you for your patience. 
 
-## Self Hosted
-Queries for Self Hosted (SH) environments.
-
-[Access the SH Repository](https://github.com/carolynponce/Bb-DBQueryRepository/tree/main/SH)
-
-## Managed Hosted 
-Queries for Managed Hosted (MH) enviroments with Open DB access. 
-
-[Access the MH Repository](https://github.com/carolynponce/Bb-DBQueryRepository/tree/main/MH)
-
-## SaaS
-Queries for SaaS enviroments with Direct Data Access (DDA).
-
-[Access the SaaS Repository](https://github.com/carolynponce/Bb-DBQueryRepository/tree/main/SaaS)
-
-## Blackboard Data
-Repository of queries for Blackbaord Data, hosted by Blackboard. 
-
-[Access the Blackboard Data Query Repository](https://github.com/blackboard/BBDN-BlackboardData-Queries)
+[Access the Query Repository](https://github.com/carolynponce/Bb-DBQueryRepository/tree/main)
 
 ## Notice
 
@@ -31,10 +13,16 @@ As resources are found, they will be listed here.
 
 Query Formats:
       
-    1. Add new queries to the folder for the specific deployment. 
-    2. Include a short summary of what the query pulls and how it is presented. 
-       (i.e. --Searches for certain Course Roles. Displays Course Role, Username and Course ID.)
-    3. Indicate if the query is specific to any service pack or version.
-    4. Include your name or reference the develper on your query (optional).
-    5. Do not include any personal institution informaiton, such as Usernames or ID's. 
-       Use placeholders when needed (i.e. [insert role_id] )
+    1. Use the provided Header Template in the query. The Header will include a title, description, version, database type, display, etc. 
+    2. Do not include any personal institution informaiton, such as Usernames or ID's. 
+       Use placeholders when needed (i.e. [Insert role_id] )
+    3. Use the following naming convention: Title_DatabaseType_DeploymentType.sql. 
+       For Example: FileSizes_PGSQL_SAAS.sql 
+       MSSQL, PGSQL, ORACLE
+       SH, MH, SAAS
+
+
+## Blackboard Data
+The repository of queries for Blackbaord Data is hosted by Blackboard at a different Github site. 
+
+[https://github.com/blackboard/BBDN-BlackboardData-Queries](https://github.com/blackboard/BBDN-BlackboardData-Queries)
