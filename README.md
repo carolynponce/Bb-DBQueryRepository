@@ -13,14 +13,14 @@ As resources are found, they will be listed here.
 
 Query Formats:
       
-    1. Use the provided [Header Template](/*QueryHeaderTemplate) in the query. 
-       The Header will include a title, description, version, database type, display, etc. 
-    2. Do not include any personal institution informaiton, such as Usernames or ID's. 
-       Use placeholders when needed (i.e. [Insert role_id] )
-    3. Use the following naming convention: Title_DatabaseType_DeploymentType.sql. 
-       For Example: FileSizes_PGSQL_SAAS.sql 
-       MSSQL, PGSQL, ORACLE
-       SH, MH, SAAS
+   1. Use the provided [Header Template](/*QueryHeaderTemplate) in the query. 
+      The Header will include a title, description, version, database type, display, etc. 
+   2. Do not include any personal institution informaiton, such as Usernames or ID's. 
+      Use placeholders when needed (i.e. [Insert role_id] )
+   3. Use the following naming convention: Title_DatabaseType_DeploymentType.sql. 
+      For Example: FileSizes_PGSQL_SAAS.sql 
+      MSSQL, PGSQL, ORACLE
+      SH, MH, SAAS
 
 
 ## Blackboard Data
