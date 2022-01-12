@@ -1,5 +1,6 @@
 Copy and paste the following header into your query submission.
-Note: SaaS queries are written for PostgreSQL.
+Query Title Example: LDA-PGSQL-SAAS.SQL
+MSSQL, PGSQL, Oracle
 
 -- Title:
 -- Author: (insert developer name)
