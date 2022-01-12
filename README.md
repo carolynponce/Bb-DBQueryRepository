@@ -15,9 +15,9 @@ Query Formats:
       
    1. Use the provided [Header Template](/*QueryHeaderTemplate.sql) in the query. 
       
-      The Header will include a title, description, version, database type, display, etc. 
+      The Header inclues the title, description, version, database type, display, etc. 
    
-   2. Do not include any personal institution informaiton, such as Usernames or ID's. 
+   2. Do not include any personal or institution informaiton, such as Usernames or ID's. 
       
       Use placeholders when needed (i.e. [Insert role_id] )
    
