@@ -13,7 +13,7 @@ As resources are found, they will be listed here.
 
 Query Formats:
       
-   1. Use the provided [Header Template](/*QueryHeaderTemplate.sql) in the query. 
+   1. Use the provided [Header Template](/QueryHeaderTemplate.sql) in the query. 
       
       The Header inclues the title, description, version, database type, display, etc. 
    
