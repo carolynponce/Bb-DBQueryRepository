@@ -1,7 +1,7 @@
 -- Title: Activity Accumulator
 -- Author: (insert developer name)
 -- Version: SaaS
--- Description: Activity Accumulator query for a user in a course during a ceratin timeframe. 
+-- Description: Activity Accumulator query for a user in a course during a certain timeframe. 
 -- Display/Output: PK1, Session ID, Timestamp, Event Type, User ID, course ID, Group, Discussion, Handle
 
 SELECT aa.pk1, aa.session_id, to_char(aa.timestamp, 'yyyy-mm-dd HH24:MI:SS') as "date", aa.event_type, u.user_id, cm.course_id, cm.course_name, g.group_name, fm.name AS forum_name, aa.internal_handle, cc.title
