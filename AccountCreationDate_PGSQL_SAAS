@@ -1,0 +1,9 @@
+-- Title: Account Creation Date
+-- Author: Terry Patterson
+-- Version: SaaS
+-- Description: Searches for date an account was created
+-- Display/Output: Shows the date and time an account was created 
+
+select u.dtcreated
+from users u
+where u.user_id = 'username'
