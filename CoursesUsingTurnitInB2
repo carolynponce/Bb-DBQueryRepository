@@ -1,0 +1,37 @@
+
+
+SELECT
+  cm.course_id, cm.course_name,
+  -- cc.cnthndlr_handle as "Publisher Tool",
+  -- cc.title,
+  u.user_id as "Instructor Username",
+  u.FIRSTNAME as "Instructor First Name",
+  u.lastname as "Instructor Last Name",
+  u.email as "Instructor Email Address"  --,  count(cc.pk1) as howmany
+FROM
+  course_contents cc ,
+  course_main cm
+LEFT JOIN
+  (
+    SELECT
+      e.crsmain_pk1,
+      u.user_id,
+      u.email,
+      u.FIRSTNAME,
+      u.lastname
+    FROM
+      users u,
+      course_users e
+    WHERE
+      e.users_pk1=u.pk1
+    AND e.role   ='P'
+  )
+  u
+ON cm.pk1=u.crsmain_pk1
+WHERE cc.crsmain_pk1 = cm.pk1
+AND cm.row_status     ='0'
+AND cm.available_ind  ='Y'
+-- AND (cm.COURSE_ID like '[Insert Course ID]' or cm.COURSE_ID like '[Insert Course ID]')
+-- looks for TII Direct or Basic Assignments
+AND (cc.cnthndlr_handle='resource/x-turnitintool-assignment' or cc.cnthndlr_handle='resource/x-turnitin-assignment')
+ORDER BY cm.course_id
