@@ -1,7 +1,8 @@
-
-
--- Users with pronouns or pronunciations
---Cond may need to be edited to fit the institution, as some may not use all fields. 
+-- Title: Users with Pronouns or Pronunciations
+-- Author: Chris Bray, University of Arkansas 
+-- Version: SaaS
+-- Description: Pulls users with Pronouns or Pronunciations
+-- Code may need to be edited to fit the institution, as some may not use all fields. 
 
 SELECT u.USER_ID as "Username",u.batch_uid AS "User Batch UID",u.LASTNAME,u.FIRSTNAME,u.EMAIL,u.STUDENT_ID,
 u.pronouns, u.pronunciation, u.pronunciation_audio_ind,
