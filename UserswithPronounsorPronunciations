@@ -1,0 +1,40 @@
+
+
+-- Users with pronouns or pronunciations
+--Cond may need to be edited to fit the institution, as some may not use all fields. 
+
+SELECT u.USER_ID as "Username",u.batch_uid AS "User Batch UID",u.LASTNAME,u.FIRSTNAME,u.EMAIL,u.STUDENT_ID,
+u.pronouns, u.pronunciation, u.pronunciation_audio_ind,
+u.department,
+CASE
+  WHEN u.educ_level = '0'then ' '
+  WHEN u.educ_level = '13' THEN 'Freshman'
+  WHEN u.educ_level = '14' THEN 'Sophomore'
+  WHEN u.educ_level = '15' THEN 'Junior'
+  WHEN u.educ_level = '16' THEN 'Senior'
+  WHEN u.educ_level = '18' THEN 'Graduate School'
+  WHEN u.educ_level = '20' THEN 'Post Graduate School'
+END AS "Education Level",
+IR.ROLE_ID,u.system_role,u.available_ind,
+    CASE
+    WHEN u.ROW_STATUS = 0 THEN 'ENABLED'
+    WHEN u.ROW_STATUS = 2 THEN 'DISABLED'
+    ELSE 'OTHER'
+    END AS rwstatus,
+u.last_login_date,u.dtcreated,u.dtmodified,
+dsu.batch_uid AS "Data Source Key"
+FROM USERS u
+INNER JOIN data_source dsu on u.data_src_pk1 = dsu.pk1
+LEFT OUTER JOIN INSTITUTION_ROLES IR ON U.INSTITUTION_ROLES_PK1=IR.PK1
+where u.pronouns notnull
+or u.pronunciation notnull
+or u.pronunciation_audio_ind notnull
+ORDER BY USER_ID
+
+SELECT count (*)
+FROM USERS u
+-- INNER JOIN data_source dsu on u.data_src_pk1 = dsu.pk1
+--LEFT OUTER JOIN INSTITUTION_ROLES IR ON U.INSTITUTION_ROLES_PK1=IR.PK1
+where u.pronouns notnull
+or u.pronunciation notnull
+or u.pronunciation_audio_ind notnull
