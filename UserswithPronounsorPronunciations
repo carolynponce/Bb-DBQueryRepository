@@ -4,6 +4,7 @@
 -- Description: Pulls users with Pronouns or Pronunciations
 -- Code may need to be edited to fit the institution, as some may not use all fields. 
 
+-- Users with pronouns or pronunciations
 SELECT u.USER_ID as "Username",u.batch_uid AS "User Batch UID",u.LASTNAME,u.FIRSTNAME,u.EMAIL,u.STUDENT_ID,
 u.pronouns, u.pronunciation, u.pronunciation_audio_ind,
 u.department,
@@ -29,13 +30,12 @@ INNER JOIN data_source dsu on u.data_src_pk1 = dsu.pk1
 LEFT OUTER JOIN INSTITUTION_ROLES IR ON U.INSTITUTION_ROLES_PK1=IR.PK1
 where u.pronouns notnull
 or u.pronunciation notnull
-or u.pronunciation_audio_ind notnull
+or u.pronunciation_audio_ind = 'Y'
 ORDER BY USER_ID
-
 SELECT count (*)
 FROM USERS u
 -- INNER JOIN data_source dsu on u.data_src_pk1 = dsu.pk1
 --LEFT OUTER JOIN INSTITUTION_ROLES IR ON U.INSTITUTION_ROLES_PK1=IR.PK1
 where u.pronouns notnull
 or u.pronunciation notnull
-or u.pronunciation_audio_ind notnull
+or u.pronunciation_audio_ind = 'Y'
