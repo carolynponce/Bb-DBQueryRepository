@@ -1,0 +1,15 @@
+-- From Richard Kline via https://community.blackboard.com/message/23524-re-in-which-tables-of-the-database-is-the-information-of-institutional-hierarchy
+-- Notes:
+-- A course can be assigned to multiple nodes. domain_course_coll.PRIMARY_IND indicates whether primary or not.
+-- This query only works for courses.  For Organizations
+-- use "domain_organization_coll" rather than "domain_course_coll"
+-- use cm.SERVICE_LEVEL = 'C'
+
+SELECT cm.COURSE_ID, cm.SERVICE_LEVEL,
+mi.NAME AS "Node Name", mi.pk1, mi.parent_pk1, d.name as "Domain Name", d.batch_uid, d.description, mi.batch_uid, ds.batch_uid as "Node PK1", mi.description, mi.dtcreated, mi.dtmodified, dcc.PRIMARY_IND
+FROM COURSE_MAIN cm
+INNER JOIN domain_course_coll dcc ON dcc.COURSE_MAIN_PK1 = cm.PK1
+INNER JOIN MI_NODE mi ON mi.DOMAIN_PK1 = dcc.DOMAIN_PK1
+INNER JOIN data_source ds ON mi.data_src_pk1 = ds.pk1
+inner join domain d on dcc.domain_pk1 = d.pk1
+WHERE cm.SERVICE_LEVEL = 'F'
